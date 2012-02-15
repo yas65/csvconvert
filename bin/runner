@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby -w
+
+#require "rubygems"
+#require "bundler"
+
+load File.join("/Users","yasumura65","src","csvconvert","csvconvert.rb")
+
+fail "give me a filename of target to convert. " unless ARGV[0]
+
+csv = Csvconvert.new(ARGV[0])
+csv.run
